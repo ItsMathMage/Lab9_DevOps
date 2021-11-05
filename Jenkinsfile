@@ -14,9 +14,9 @@ BEANSTALK_ENVIRONMENT_NAME="Excursionisromanko-env"
 stages {
 stage('Checkout') {
 steps {
-checkout([$class: 'GitSCM', branches: [[name: '*/master']], 
+checkout([$class: 'GitSCM', branches: [[name: '*/main']], 
 extensions: [], userRemoteConfigs: [[credentialsId: 'GITHUB_CONNECTION', url:
-'git@github.com:vitaliiromanko/ExcursionISPrivate4.git']]])
+'git@github.com:ItsMathMage/Lab9_DevOps.git']]])
 }
 }
 stage('Build') {
